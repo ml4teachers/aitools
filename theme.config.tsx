@@ -36,9 +36,13 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <span>
-        © {new Date().getFullYear()} Thomas Zurfluh | {' '}
+        © {new Date().getFullYear()} Thomas Zurfluh | {'  '}
         <a href="https://www.phzg.ch" target="_blank">
           Pädagogische Hochschule Zug
+        </a>
+        {'  '} | {'  '}
+        <a href="https://www.oskin.ch" target="_blank">
+          ICT-Fachgruppe OSKIN
         </a>
         .
       </span>
