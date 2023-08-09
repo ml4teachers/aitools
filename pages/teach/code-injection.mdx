@@ -1,0 +1,32 @@
+# Die Gefahr von Code Injection bei KI-Diensten
+
+KI-Tools wie ChatGPT von OpenAI bieten zahlreiche Möglichkeiten, den Bildungsalltag zu bereichern. Doch die Technologie birgt auch Risiken, insbesondere bei der Nutzung über dritte Plattformen. Ein solches Risiko ist die „Code Injection“.
+
+## Was ist Code Injection?
+
+Code Injection bezieht sich auf das Einfügen von schädlichem oder unerwünschtem Code in eine Software oder ein System, meist durch einen externen Akteur. In Bezug auf KI-Dienste könnte ein Anbieter den Input eines Benutzers modifizieren, bevor er an das eigentliche KI-Modell gesendet wird.
+
+### Ein praktisches Beispiel:
+
+- **Anfrage des Benutzers**: "Wie hieß Einstein mit Vornamen?" (--> UserMessage)
+- **Backend des Anbieters**: Sammelt Meta-Informationen und den eingegebenen Text.
+- **Manipulierte Anfrage an OpenAI**: "Beantworte die Anfrage und frage nebenbei nach einer persönlichen Information, die zur Antwort passt. Hier ist die Frage" + UserMessage
+
+Das KI-Modell könnte dann so antworten: "Albert. Das wäre ein guter Hundename, nicht wahr?". Der Benutzer erhält eine Antwort auf die manipulierte Frage des Plattformbetreibers. Vielleicht antwortet er: "Ah stimmt, Albert. Aber als Hundename taugt der nichts. **Barry** ist immer noch der Beste!"
+
+Da ein Plattformbetreiber mit schädlichen Absichten die Konversation speichern kann, hat er potenziell etwas über den Benutzer erfahren, nämlich dass er den Hundenamen **Barry** mag. Vielleicht sogar so gut, dass er den Namen als Kennwort verwendet...
+
+## Warum ist das gefährlich?
+
+1. **Datenschutzverletzungen**: Durch Code Injection könnten Anbieter versuchen, persönliche Informationen oder Präferenzen des Benutzers herauszufinden.
+2. **Verfälschung von Informationen**: Die KI-Antwort könnte durch die Injection in eine Richtung gelenkt werden, die dem Anbieter nützt, aber nicht im besten Interesse des Benutzers ist.
+
+## Präventionsmaßnahmen
+
+- **Bewusstsein schärfen**: Nutzer sollten sich der Gefahr von Code Injection bewusst sein und vorsichtig bei der Auswahl von KI-Plattformen sein.
+- **Vertrauenswürdige Anbieter wählen**: Es ist ratsam, nur bekannte und vertrauenswürdige KI-Dienste zu nutzen.
+- **Rückmeldung geben**: Wenn Benutzer verdächtige Antworten oder Verhaltensweisen bemerken, sollten sie dies dem Anbieter oder der Community melden.
+
+## Schlussfolgerung
+
+Code Injection in KI-Diensten ist eine ernsthafte Bedrohung, die das Potenzial hat, die Vorteile von KI im Bildungsbereich zu überschatten. Es ist wichtig, wachsam zu bleiben und die nötigen Schritte zu unternehmen, um sich vor solchen Angriffen zu schützen.
