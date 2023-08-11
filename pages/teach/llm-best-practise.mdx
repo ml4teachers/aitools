@@ -1,0 +1,47 @@
+import MDXImage from '/components/mdximage';
+
+# Strategien für optimale Ergebnisse mit KI-Sprachmodellen
+
+KI-Sprachmodelle wie ChatGPT von OpenAI sind leistungsfähige Werkzeuge. Um jedoch konsistente und zuverlässige Antworten von diesen Modellen zu erhalten, sind bestimmte Strategien und Taktiken hilfreich. Dieser Artikel basiert auf den [gpt-best-practices](https://platform.openai.com/docs/guides/best-practices) von OpenAI.
+
+## 1. Klare Anweisungen geben
+
+GPT-Modelle benötigen präzise Anweisungen, um die gewünschten Ergebnisse zu liefern.
+
+**Taktiken**:
+- Detaillierte Abfragen stellen, um relevantere Antworten zu erhalten.
+- Das Modell auffordern, eine bestimmte Persona anzunehmen.
+- Längenbeschränkungen für die Ausgabe festlegen.
+- Beispielantworten bereitstellen.
+
+## 2. Referenztexte bereitstellen
+
+Durch Bereitstellung von Referenztexten kann das Modell genaue und fundierte Antworten geben.
+
+**Taktiken**:
+- Das Modell auffordern, Antworten basierend auf einem Referenztext zu geben.
+- Das Modell auffordern, Antworten mit Zitaten aus einem Referenztext zu geben.
+
+## 3. Komplexe Aufgaben in einfachere Unteraufgaben unterteilen
+
+Die Aufteilung einer Aufgabe kann die Genauigkeit der Antworten erhöhen.
+
+**Taktiken**:
+- Lange Dokumente stückweise zusammenfassen.
+- Für Dialoganwendungen, die sehr lange Konversationen erfordern, vorherige Dialoge zusammenfassen oder filtern.
+
+## 4. Dem Modell "Denkzeit" geben
+
+Das Modell kann genauere Antworten liefern, wenn es Zeit hat, die Anfrage zu verarbeiten.
+
+**Taktiken**:
+- Das Modell auffordern, seine eigene Lösung auszuarbeiten, bevor es zu einem Schluss kommt.
+- Das Modell fragen, ob es bei früheren Durchgängen etwas übersehen hat.
+
+## 5. Externe Tools nutzen
+
+Einige Aufgaben können effizienter von spezialisierten Tools als von einem GPT-Modell (momentan nur mit [GPT-4](/tools/chatgptplus) möglich) ausgeführt werden.
+
+**Taktiken**:
+- Plugins mit Suchtechnologien, zum Beispiel [Wikipedia](https://diff.wikimedia.org/2023/07/13/exploring-paths-for-the-future-of-free-knowledge-new-wikipedia-chatgpt-plugin-leveraging-rich-media-social-apps-and-other-experiments/), verwenden, um effiziente Wissensabfragen durchzuführen.
+- Codeausführung nutzen, um genauere Berechnungen durchzuführen oder externe APIs aufzurufen.

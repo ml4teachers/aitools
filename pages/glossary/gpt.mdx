@@ -1,17 +1,24 @@
-# GPT
-Ein **Generative Pretrained Transformer** (GPT) ist ein mathematisches Modell, das für die Erzeugung von Texten entwickelt wurde, die so wirken sollen, als wären sie von einem Menschen geschrieben. Um besser zu verstehen, wie dieses funktioniert, brechen wir den Namen in seine Bestandteile herunter: Generativ, Pretrained und Transformer. Als Anschauungsbeispiel dient uns dafür der Anfang eines Märchens:
+import MDXImage from '/components/mdximage';
 
+
+# GPT
+Ein **Generative Pretrained Transformer** (GPT) ist ein mathematisches Modell, das für die Erzeugung von Texten entwickelt wurde, die so wirken sollen, als wären sie von einem Menschen geschrieben. Um besser zu verstehen, wie dieses funktioniert, brechen wir den Namen in seine Bestandteile herunter: Generativ, Pretrained und Transformer. Als Anschauungsbeispiel dient uns dafür der Anfang eines Märchens. Gemäss einer ausführlichen Erklärung von [Stephan Wolfram](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/), versucht ChatGPT immer eine *vernünftige Fortsetzung* des bisherigen Textes zu produzieren, wobei *vernünftig* bedeutet, was man erwarten könnte, nachdem man gesehen hat, was Menschen auf Milliarden von Webseiten, in Büchern und Artikeln geschrieben haben:
+
+<MDXImage src="/explanations/gpt-prediction.png" alt="Sprachmodell generiert Textfortsetzung" />
 
 ## Tokenisierung
-Das GPT-Modell kann nicht direkt mit Wörtern oder Sätzen rechnen. Zuerst müssen diese in kleinere Einheiten, sogenannte **Tokens**, zerlegt werden. Ein Token kann ein Wort, ein Wortteil oder sogar ein einzelnes Zeichen sein. Diese Tokens werden dann in eine numerische Form umgewandelt, die das Modell verarbeiten kann.
+Das GPT-Modell kann nicht direkt mit Wörtern oder Sätzen rechnen. Zuerst müssen diese in kleinere Einheiten, sogenannte [Tokens](/glossary/token), zerlegt werden. Ein Token kann ein Wort, ein Wortteil oder sogar ein einzelnes Zeichen sein. Diese Tokens werden dann in eine numerische Form umgewandelt, die das Modell verarbeiten kann.
 
+## Embedding
+Bevor das Modell die Token in den Transformer-Block weiterleitet, werden sie in sogenannte **Embeddings** umgewandelt. Ein Embedding ist eine dichte Vektorrepräsentation eines Tokens, die dessen semantische Bedeutung in einem hochdimensionalen Raum darstellt. Durch diesen Prozess werden Wörter oder Zeichen, die in ihrer Bedeutung ähnlich oder verwandt sind, in diesem Raum näher zusammengebracht. Die Transformation von Tokens in Embeddings ermöglicht es dem Modell, die semantischen Beziehungen zwischen verschiedenen Tokens effektiv zu erfassen und darauf aufbauend sinnvolle Textfortsetzungen zu generieren.
 
 ## Transformer
-Die zugrundeliegende Architektur des Modells nennt sich Transformer. Sie ist dafür verantwortlich, den Kontext innerhalb einer Sequenz von Tokens zu verstehen. In einfachen Worten analysiert der Transformer die **Beziehung** zwischen den Tokens und berechnet, wie wichtig ein Token für das Verständnis der anderen ist. Diese Beziehungs- und Bedeutungsanalyse bildet die Grundlage für die Berechnung des wahrscheinlichsten nächsten Tokens.
-
+Die zugrundeliegende Architektur des Modells nennt sich Transformer. Sie ist dafür verantwortlich, den Kontext innerhalb einer Sequenz von Embeddings zu verstehen. In einfachen Worten analysiert der Transformer die **Beziehung** zwischen den Embeddings und bestimmt, wie relevant ein Embedding für das Verständnis der anderen ist. Diese Beziehungs- und Bedeutungsanalyse bildet die Grundlage für die Auswahl des nächsten Tokens in der Sequenz.
 
 ## Generator
-Das Wort **Generativ** weist darauf hin, dass das Modell Texte generieren kann. Es macht dies, indem es basierend auf den bisher verarbeiteten Tokens einen nächsten Token auswählt. Dieser ausgewählte Token hat dabei eine hohe Wahrscheinlichkeit, in einer logischen und grammatikalisch korrekten Weise auf die vorherigen Tokens zu folgen. Da meist mehrere Tokens diese Kriterien erfüllen können, wird bei der Generierung des nächsten Tokens auch eine gewisse Zufälligkeit einbezogen. Daher erzeugt das Modell nicht immer exakt den gleichen Text, selbst wenn die Eingabe gleich bleibt.
+Das Wort **Generativ** weist darauf hin, dass das Modell Texte generieren kann. Es macht dies, indem es basierend auf den bisher verarbeiteten Tokens den nächsten passenden Token auswählt. Dieser ausgewählte Token ergänzt die vorherigen Tokens in einer logischen und grammatikalisch korrekten Weise. Da es oft mehrere Tokens gibt, die diese Kriterien erfüllen können, berücksichtigt das Modell bei der Generierung eine gewisse Variabilität. Daher erzeugt das Modell nicht immer exakt denselben Text, selbst wenn die Eingabe identisch ist.
+
+![](/explanations/gpt.png)
 
 
 ## Pretraining
