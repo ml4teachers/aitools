@@ -12,7 +12,14 @@
   },
   "tools": {
     "title": "Tools",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
   },
   "teach": {
     "title": "Unterricht",

@@ -1,6 +1,23 @@
 {
+  "text": {
+    "title": "Textgenerierung",
+    "type": "separator"
+  },
   "chatgpt": "ChatGPT",
   "chatgptplus": "ChatGPT Plus",
+  "image": {
+    "title": "Bildgenerierung",
+    "type": "separator"
+  },
   "midjourney": "Midjourney",
-  "musicgen": "MusicGen"
+  "music": {
+    "title": "Musikgenerierung",
+    "type": "separator"
+  },
+  "musicgen": "MusicGen",
+  "tts": {
+    "title": "Sprachgenerierung",
+    "type": "separator"
+  },
+  "elevenlabs": "ElevenLabs"
 }

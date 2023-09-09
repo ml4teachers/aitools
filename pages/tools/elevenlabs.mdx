@@ -1,0 +1,37 @@
+---
+title: "ElevenLabs"
+date: "2023-01-01"
+category: ["Sprachgenerierung"]
+description: "Ein Tool zur Erzeugung von realistisch klingender Sprache aus Text"
+performance: 8
+accessibility: 3
+cost: 0
+registration: false
+icon: "/logos/elevenlabs.png"
+---
+
+import MDXImage from '/components/mdximage';
+
+# ElevenLabs
+Mit Hilfe der Webanwendung [Elevenlabs](https://elevenlabs.io/) können mit wenigen Klicks realistisch klingende Sprachausgaben aus Text in erzeugt werden. Um den Dienst zu nutzen, braucht es eine Registrierung. Die erweiterten Funktionen sind für $ 5.- pro Monat als Abo verfügbar. Diese ermöglichen es, eigene Audiodateien hochzuladen, um das System auf eine reale Stimme zu trainieren.
+
+## Beispiel
+Mit Hilfe dieser Aufnahme soll das Modell trainiert werden:
+
+<div className={`flex items-center pt-6`}>
+<iframe className={`w-full max-w-md mx-auto rounded-lg border-6`} height="100" src="https://www.youtube.com/embed/2TKMNS1etD4?si=G6wVE5223osRR7c7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+Nachdem ein kostenpflichtiges Abo erstellt wurde, kann im **Voicelab** eine neue Stimme geklont werden. Die Funktion nennt sich **Instant Voice Cloning**. Im angezeigten Fenster können anschliessend bis zu 25 Beispiele der Zielstimme hochgeladen werden. Das Resultat ist jedoch bereits bei einem Sample beeindruckend.
+
+<MDXImage src="/screenshots/elevenlabs0.png" alt="ElevenLabs VoiceLab" />
+
+Wenn die Stimme geklont wurde, kann sie innert wenigen Sekunden benutzt werden. Der Modus nennt sich **Speech Synthesis**. Hier kann das aktuelle Modell *Eleven Multilingual v2* sowie die gewünschte Stimme ausgewählt werden. Es empfiehlt sich, eine kurze Textpassage zu wählen und mit den Voice Settings etwas zu spielen. 
+
+<MDXImage src="/screenshots/elevenlabs2.png" alt="ElevenLabs VoiceLab" />
+
+Anschliessend kann der eingegebene Text durch **Generate** in eine Audiodatei umgewandelt werden und bei Bedarf im MP3-Format heruntergeladen werden. Hier das Resultat:
+
+<div className={`flex items-center pt-6`}>
+<iframe className={`w-full max-w-md mx-auto rounded-lg border-6`} height="100" src="https://www.youtube.com/embed/F_cLsDMnIgg?si=RdqEdGjVFCJvxT7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
