@@ -22,7 +22,7 @@ const generateJSON = () => {
       };
     });
 
-    fs.writeFileSync('frontmatterData.json', JSON.stringify(data));
+  fs.writeFileSync('public/frontmatterData.json', JSON.stringify(data));
   } catch (error) {
     console.error("Something went wrong:", error);
   }
