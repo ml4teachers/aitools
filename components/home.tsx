@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 const features = [
   {
-    link: '/tools/chatgpt',
+    link: '/tools',
     name: 'Tools',
     description:
       'Entdecke eine kontinuierlich wachsende Liste von KI Tools für den Unterricht.',

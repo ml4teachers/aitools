@@ -12,6 +12,7 @@ const ToolsLayout = ({ children }) => {
     }
   
     // Sammle alle Kategorien ohne Duplikate (ohne Set)
+    console.log('Tools:', tools);
     const allCategories = tools.reduce((acc, toolData) => {
       const tool = toolData.frontmatter;
       tool.category.forEach(cat => {
