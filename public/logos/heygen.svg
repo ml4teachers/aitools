@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122 122">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-9 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_4);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        isolation: isolate;
+        opacity: .6;
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_5);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_6);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_3);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_2);
+      }
+
+      .cls-7 {
+        fill: #3c8fe8;
+      }
+
+      .cls-8 {
+        fill: #d9d9d9;
+      }
+    </style>
+    <mask id="mask" x="-34.07" y="-21.92" width="245.82" height="169.7" maskUnits="userSpaceOnUse">
+      <g id="mask0_8029_58608" data-name="mask0 8029 58608">
+        <path class="cls-8" d="m42.24,88.5c-.88-.43-1.35.13-1.35,1.47s.05,6.18,1.1,8.24c.97,1.9,2.51,3.44,4.41,4.41,1.65.84,3.69,1.04,7.08,1.08,9.35-.42,17.52-5.32,22.43-12.61.44-.65-.04-1.49-.82-1.49h-22.31c-3.1,0-7.75.26-10.55-1.11Z"/>
+        <path class="cls-8" d="m38.39,46.89c0-1.38-1.82-1.87-2.51-.68-1.81,3.14-4.65,8.06-8.68,15.03-7.05,12.21-4.62,28.59,8.97,37.81,1.68,1.14,3.03-.67,2.7-2.09-.69-2.9-.49-6.12-.49-9.1v-40.97Z"/>
+        <path class="cls-8" d="m92.53,59.69c.07.97.78,1.1,1.95.43,1.17-.67,5.33-3.14,6.58-5.07,1.16-1.79,1.73-3.9,1.61-6.02-.1-1.85-.94-3.71-2.6-6.68-5.03-7.89-13.37-12.52-22.14-13.13-.78-.05-1.27.78-.88,1.46l11.15,19.32c1.55,2.68,4.1,6.58,4.32,9.69Z"/>
+        <path class="cls-8" d="m58.41,83.82c-1.19.69-.71,2.51.67,2.51,3.62,0,9.3,0,17.36,0,14.1,0,27.07-10.29,28.26-26.67.15-2.03-2.1-2.29-3.16-1.29-2.17,2.05-5.06,3.48-7.64,4.97l-35.48,20.48Z"/>
+        <path class="cls-8" d="m43.11,30.8c.81-.54.56-1.23-.6-1.9-1.17-.67-5.38-3.05-7.68-3.17-2.13-.11-4.24.45-6.02,1.61-1.55,1.01-2.74,2.68-4.48,5.59-4.31,8.3-4.16,17.84-.3,25.73.34.7,1.31.71,1.7.03l11.15-19.32c1.55-2.68,3.65-6.84,6.23-8.58Z"/>
+        <path class="cls-8" d="m81.07,48.28c1.19.69,2.53-.64,1.84-1.83-1.81-3.14-4.65-8.06-8.68-15.03-7.05-12.21-22.45-18.3-37.23-11.13-1.83.89-.93,2.96.46,3.39,2.86.85,5.55,2.64,8.13,4.13l35.48,20.48Z"/>
+      </g>
+    </mask>
+    <radialGradient id="Unbenannter_Verlauf" data-name="Unbenannter Verlauf" cx="-767.07" cy="611.12" fx="-767.07" fy="611.12" r="1" gradientTransform="translate(-51727.34 65149.55) rotate(90) scale(84.85 -84.85)" gradientUnits="userSpaceOnUse">
+      <stop offset=".51" stop-color="#8535f2"/>
+      <stop offset="1" stop-color="#8535f2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_2" data-name="Unbenannter Verlauf 2" cx="-759.76" cy="622.96" fx="-759.76" fy="622.96" r="1" gradientTransform="translate(-22882.69 28100.31) rotate(90) scale(36.93 -36.93)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff439d"/>
+      <stop offset="1" stop-color="#ff439d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_3" data-name="Unbenannter Verlauf 3" cx="-762.03" cy="619.28" fx="-762.03" fy="619.28" r="1" gradientTransform="translate(-27722.29 34222.55) rotate(90) scale(44.78 -44.78)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#44e7ff"/>
+      <stop offset="1" stop-color="#44e7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="Unbenannter_Verlauf_4" data-name="Unbenannter Verlauf 4" x1="32.51" y1="82.13" x2="32.51" y2="40.42" gradientTransform="translate(0 124) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_5" data-name="Unbenannter Verlauf 5" x1="57.05" y1="32.59" x2="93.18" y2="53.44" gradientTransform="translate(0 124) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" x1="88.34" y1="78.34" x2="52.21" y2="99.19" gradientTransform="translate(0 124) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-9">
+    <g>
+      <rect class="cls-7" x="11.76" y="9.24" width="102.48" height="102.49"/>
+      <circle class="cls-1" cx="126.9" cy="62.93" r="84.85"/>
+      <circle class="cls-6" cx="120.7" cy="45.56" r="36.93"/>
+      <circle class="cls-5" cx="10.71" cy="97.06" r="44.78"/>
+      <path class="cls-2" d="m38.4,83.67v-36.78c0-1.38-1.82-1.86-2.51-.67l-9.26,16.04,11.77,21.41Z"/>
+      <path class="cls-3" d="m90.31,65.42l-31.85,18.39c-1.19.69-.7,2.51.67,2.51h18.52l12.65-20.9Z"/>
+      <path class="cls-4" d="m49.2,29.86l31.85,18.39c1.19.69,2.53-.65,1.84-1.84l-9.26-16.04-24.43-.51Z"/>
+    </g>
+  </g>
+</svg>

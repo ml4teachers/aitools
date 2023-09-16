@@ -1,3 +1,19 @@
-import Home from '/components/home'
+import { Cards, Card } from 'nextra/components'
+import { AcademicCapIcon, LinkIcon, BookOpenIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 
-<Home />
+# Künstliche Intelligenz für den Unterricht
+
+<div className={`flex items-center pt-6`}>
+<iframe className={`w-full max-w-md mx-auto rounded-lg border-6`} height="252" src="https://www.youtube.com/embed/zIjy_cfzkbg?si=TEy86kyC3hKnuWFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+## Alles, was du über KI wissen musst!
+
+Entdecke verschiedene Möglichkeiten, wie KI deine Unterrichtserfahrung bereichern kann. Von praxisnahen Tools bis hin zu grundlegenden Konzepten – hier findest du die Ressourcen, die du brauchst.
+
+<Cards>
+  <Card icon={<WrenchScrewdriverIcon className="h-6 w-6 text-slate-900" />} title="Tools" href="/tools" />
+  <Card icon={<AcademicCapIcon className="h-6 w-6 text-slate-900" />} title="Unterricht" href="/teach/no-login" />
+  <Card icon={<BookOpenIcon className="h-6 w-6 text-slate-900" />} title="Begriffe" href="/glossary/gpt" />
+  <Card icon={<LinkIcon className="h-6 w-6 text-slate-900" />} title="Ressourcen" text="hallo" href="/links" />
+</Cards>

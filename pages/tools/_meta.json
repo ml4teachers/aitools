@@ -19,5 +19,10 @@
     "title": "Sprachgenerierung",
     "type": "separator"
   },
-  "elevenlabs": "ElevenLabs"
+  "elevenlabs": "ElevenLabs",
+  "videogen": {
+    "title": "Videogenerierung",
+    "type": "separator"
+  },
+  "heygen": "HeyGen" 
 }
