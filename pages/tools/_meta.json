@@ -5,6 +5,7 @@
   },
   "chatgpt": "ChatGPT",
   "chatgptplus": "ChatGPT Plus",
+  "copilot": "Microsoft Copilot",
   "image": {
     "title": "Bildgenerierung",
     "type": "separator"
@@ -15,6 +16,7 @@
     "type": "separator"
   },
   "musicgen": "MusicGen",
+  "sunoai": "Suno.ai",
   "tts": {
     "title": "Sprachgenerierung",
     "type": "separator"

@@ -1,4 +1,5 @@
 // scripts/generateFrontmatterJSON.js
+// Ausführen mit 'node scripts/generateFrontmatterJSON.js' 
 
 const fs = require('fs');
 const path = require('path');
