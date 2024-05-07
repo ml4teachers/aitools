@@ -6,6 +6,7 @@
   "chatgpt": "ChatGPT",
   "chatgptplus": "ChatGPT Plus",
   "copilot": "Microsoft Copilot",
+  "deepl": "DeepL und DeepL Write",
   "image": {
     "title": "Bildgenerierung",
     "type": "separator"
