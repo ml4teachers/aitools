@@ -7,11 +7,13 @@
   "chatgptplus": "ChatGPT Plus",
   "copilot": "Microsoft Copilot",
   "deepl": "DeepL und DeepL Write",
+  "fobizz": "Fobizz Tools",
   "image": {
     "title": "Bildgenerierung",
     "type": "separator"
   },
   "midjourney": "Midjourney",
+  "canva": "Canva Magic",
   "music": {
     "title": "Musikgenerierung",
     "type": "separator"
