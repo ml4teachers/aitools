@@ -3,7 +3,7 @@ title: "ChatGPT"
 date: "2022-11-30"
 category: ["Textgenerierung", "Bildgenerierung"]
 description: "Ein fortschrittliches KI-Modell von OpenAI zur Textgenerierung"
-performance: 8
+performance: 10
 accessibility: 5
 cost: 0
 registration: true
@@ -16,50 +16,123 @@ import Chat from '/components/chat'
 
 
 # ChatGPT
-Die Nutzung von [ChatGPT](https://chat.openai.com/) erfordert ein Konto bei OpenAI. Die Nutzung ist kostenlos, allerdings kann die ständige Verfügbarkeit nicht gewährleistet werden. Für den Zugriff auf das neueste Modell mit zusätzlichen Funktionen und garantierter Verfügbarkeit wird von OpenAI eine monatliche Gebühr von CHF 20.- für [ChatGPT Plus](./chatgptplus) erhoben.
+Die Nutzung von [ChatGPT](https://chatgpt.com/) erfordert ein Konto bei OpenAI. Seit kurzem ist das leistungsstärkste Modell GPT-4o verfügbar, welches sowohl in der kostenlosen als auch in der kostenpflichtigen Version genutzt werden kann. Nutzer der kostenlosen Version haben eingeschränkten Zugriff auf GPT-4o und einige erweiterte Funktionen, während Plus-Abonnenten für eine monatliche Gebühr von CHF 20.- erweiterten Zugriff auf diese Funktionen haben.
 
 
 <MDXImage src="/screenshots/chatgpt-screenshot.png" alt="ChatGPT Benutzeroberfläche" />
 
 
 ## Registrierung
-Zur Einrichtung eines OpenAI-Kontos sind eine gültige E-Mail-Adresse und eine Mobiltelefonnummer erforderlich. Diese Daten werden sicher gespeichert und nicht für Werbezwecke verwendet (vergleichbar mit Microsoft, Google, etc.). Die Sprache der Benutzeroberfläche von ChatGPT ist Englisch, das Modell ist jedoch auch in der Lage, Deutsche Texte zu verarbeiten. ChatGPT kann im iOS AppStore als Applikation heruntergeladen oder über einen beliebigen Internetbrowser auf [chat.openai.com](https://chat.openai.com) aufgerufen werden. Die Kontoerstellung erfolgt über die Option  Sign up.
+Zur Einrichtung eines OpenAI-Kontos sind eine gültige E-Mail-Adresse und eine Mobiltelefonnummer oder eine Verknüpfung mit einem Google, Microsoft oder Apple Konto erforderlich. ChatGPT kann im [iOS AppStore](https://apps.apple.com/ch/app/chatgpt/id6448311069) sowie im [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt&pcampaignid=web_share) als Applikation heruntergeladen oder über einen beliebigen Internetbrowser auf [chatgpt.com](https://chatgpt.com) aufgerufen werden.
+
+## Gesprochene Unterhaltungen in der mobilen Applikation
+Die mobile Applikation von ChatGPT ermöglicht es Nutzenden, gesprochene Unterhaltungen mit dem Modell zu führen. Anstatt geschriebene Eingaben zu tätigen, können Nutzende ihre Fragen oder Anfragen direkt in die App sprechen und gesprochene Antworten erhalten. Dies erleichtert die Interaktion mit dem Modell und ermöglicht eine natürlichere Kommunikation.
+
+<iframe className={`w-full max-w-md mx-auto mt-8 rounded-lg border-6`} height="254" src="https://www.youtube.com/embed/YUrOtZedL9I?si=Y-HM5bcJR3C2MoVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Prompts
-Die Eingabe in ein vortrainiertes Modell wird als "Prompt" bezeichnet. Grundsätzlich gibt es keine falschen Prompts, aber es wurde festgestellt, dass das Vertrauen von Nutzenden in das Modell schnell abnehmen kann, wenn versucht wird, die Grenzen von ChatGPT zu testen. Da die Modelle hinter ChatGPT ständig weiterentwickelt werden, können Fehler, die heute auftreten, morgen bereits nicht mehr reproduzierbar sein. Dennoch ist es wichtig, sich der Einschränkungen des Modells bewusst zu sein:
--	ChatGPT wurde mit Daten aus dem Internet bis September 2021 trainiert.
--	ChatGPT kann plausible, aber falsche Aussagen erzeugen.
--	ChatGPT gibt keine Quellen an.
--	ChatGPT ist kein Ersatz für eine Suchmaschine.
+Die Eingabe in ein vortrainiertes Modell wird als "Prompt" bezeichnet. Ein gut formulierter Prompt kann die Qualität und Genauigkeit der Antworten von ChatGPT erheblich verbessern. Hier sind einige Tipps für erfolgreiches Prompting:
 
+### Präzision und Klarheit
+Je präziser und klarer die Frage oder Aufgabenstellung formuliert ist, desto besser kann ChatGPT darauf antworten. Vermeide vage oder mehrdeutige Anfragen.
+
+**Beispiel:**
+Statt "Erkläre Atommodelle" könnte man fragen: "Erkläre das Bohrsche Atommodell und wie es sich vom Rutherford-Modell unterscheidet."
+
+### Kontext bereitstellen
+Gib genügend Kontextinformationen, damit ChatGPT die Anfrage besser verstehen kann. Dies kann den Rahmen, die Zielgruppe oder spezifische Anforderungen umfassen.
+
+**Beispiel:**
+"Du bist eine pädagogisch hervorragend ausgebildete Physikprofessorin und erklärst einem 10-jährigen Kind, wie ein Atomreaktor funktioniert."
+
+### Schritt-für-Schritt Anweisungen
+Fordere das Modell auf, seine Gedanken Schritt für Schritt zu erklären. Dies kann besonders bei komplexen Themen hilfreich sein.
+
+**Beispiel:**
+"Erkläre Schritt für Schritt, wie die Photosynthese in Pflanzen funktioniert."
+
+### Beispielhafte Antworten anfordern
+Manchmal kann es hilfreich sein, das Modell zu bitten, mehrere Beispiele oder Varianten einer Antwort zu geben.
+
+**Beispiel:**
+"Gib drei Beispiele, wie man eine Einleitung für einen wissenschaftlichen Artikel über Klimawandel schreiben könnte."
+
+### Spezifische Rollen definieren
+Durch die Zuweisung einer bestimmten Rolle kann die Art und Weise, wie das Modell antwortet, beeinflusst werden.
+
+**Beispiel:**
+"Du bist ein Historiker, der sich auf die Französische Revolution spezialisiert hat. Erkläre die Ursachen und Folgen der Französischen Revolution."
+
+### Erwartungen klar kommunizieren
+Gib an, was genau du von der Antwort erwartest, z.B. Länge, Detailgrad oder Stil.
+
+**Beispiel:**
+"Schreibe eine kurze Zusammenfassung (maximal 200 Wörter) über die wirtschaftlichen Auswirkungen der industriellen Revolution."
+
+### Feedback geben und nachbessern lassen
+Wenn die generierte Antwort nicht zufriedenstellend ist, gib spezifisches Feedback und bitte um eine Überarbeitung.
+
+**Beispiel:**
+"Die Antwort ist zu allgemein. Kannst du mehr Details zu den sozialen Auswirkungen der industriellen Revolution geben?"
+
+### Kreative Aufgabenstellungen
+Nutze kreative und offene Fragen, um interessante und unerwartete Antworten zu erhalten.
+
+**Beispiel:**
+"Erfinde eine Kurzgeschichte, die in einer futuristischen Stadt spielt und in der künstliche Intelligenzen eine Schlüsselrolle spielen."
+
+### Eingrenzung des Themenbereichs
+Gib dem Modell klare Vorgaben, welche Aspekte des Themas behandelt werden sollen.
+
+**Beispiel:**
+"Beschreibe die politischen Reformen in der Meiji-Restauration und lasse wirtschaftliche Aspekte außer Acht."
+
+### Verwendung von Tools und Funktionen
+Erwähne spezifische Funktionen oder Tools, die genutzt werden sollen, wie z.B. erweiterte Datenanalyse oder Bildgenerierung.
+
+**Beispiel:**
+"Analysiere die Verkaufsdaten der letzten fünf Jahre und erstelle eine Vorhersage für die nächsten zwei Jahre. Nutze die erweiterte Datenanalyse-Funktion."
+
+Hier ist der überarbeitete Abschnitt "Datenschutz" mit dem aktuellen Screenshot und der entsprechenden Begründung:
 
 ## Datenschutz
-Eingaben der Nutzenden werden zur Verbesserung der aktuellen Modelle in zukünftigen Trainingsprozessen gespeichert. Aus diesem Grund wird dringend davon abgeraten, persönliche oder vertrauliche Daten im Chatverlauf zu teilen. Dazu gehören etwa Namen oder Informationen, die Rückschlüsse auf eine Person zulassen. Sollte das Modell dennoch in einem solchen Kontext verwendet werden, beispielsweise zur Generierung einer E-Mail, kann in den Einstellungen unter Data Controls das Training deaktiviert werden.
+Eingaben der Nutzenden werden zur Verbesserung der aktuellen Modelle in zukünftigen Trainingsprozessen gespeichert. Aus diesem Grund wird dringend davon abgeraten, persönliche oder vertrauliche Daten im Chatverlauf zu teilen. Dazu gehören etwa Namen oder Informationen, die Rückschlüsse auf eine Person zulassen.
 
+Um das Training an den eigenen Eingaben zu deaktivieren, können die Einstellungen wie folgt angepasst werden:
 
-<MDXImage src="/screenshots/chatgpt-settings.png" alt="Ausschalten der Chat History & Training" />
+1. Öffne die Einstellungen in ChatGPT.
+2. Gehe zum Abschnitt "Datenkontrollen".
+3. Schalte die Option "Das Modell für alle verbessern" aus.
 
+<MDXImage src="/screenshots/chatgpt-settings.png" alt="Ausschalten des Trainings an eigenen Inhalten" />
+
+Auch wenn das Training deaktiviert wird, ist es weiterhin wichtig, keine persönlichen oder vertraulichen Informationen in den Chat einzugeben. Dies schützt die Privatsphäre und minimiert das Risiko, dass sensible Daten unbeabsichtigt verarbeitet werden.
+
+### Warum soll ich keine persönlichen oder vertraulichen Daten teilen?
+- **Privatsphäre**: Persönliche Daten wie Namen, Adressen oder Telefonnummern können missbraucht werden, wenn sie in falsche Hände geraten.
+- **Vertraulichkeit**: Sensible Informationen, z.B. geschäftliche oder medizinische Daten, sollten immer geschützt und nur in sicheren, vertraulichen Umgebungen geteilt werden.
+- **Datenmissbrauch**: Auch wenn OpenAI Massnahmen zum Schutz der Daten ergreift, besteht immer ein Restrisiko, dass Daten missbraucht oder unbeabsichtigt weitergegeben werden.
+
+Durch das Ausschalten des Trainings an den eigenen Eingaben und das bewusste Vermeiden der Eingabe sensibler Daten kann die Nutzung von ChatGPT sicherer gestaltet werden.
 
 ## Nutzung durch Schülerinnen und Schüler
 Gemäss den [Nutzungsbestimmungen von OpenAI](https://openai.com/policies/terms-of-use) ist die Erstellung eines eigenen Kontos für Kinder unter 13 Jahren nicht zulässig. Jugendliche unter 18 Jahren benötigen für die Erstellung eines Kontos das Einverständnis ihrer Eltern. Dies bedeutet, dass eine Nutzung von ChatGPT im regulären Schulkontext eigentlich nicht möglich ist.
 
 Dennoch kann es vorkommen, dass einige Kinder und Jugendliche ein OpenAI-Konto besitzen und ChatGPT auch für schulische Zwecke nutzen. In diesem Fall verfügen diese Schülerinnen und Schüler über einen persönlichen Assistenten, der beispielsweise bei Hausaufgaben unterstützen kann. Es ist daher von Bedeutung, dass Lehrpersonen sich über die Fähigkeiten dieses Assistenten im Klaren sind. Um einen möglichen Schereneffekt, der durch den ungleichen Zugang zu solchen Technologien entstehen könnte, zu minimieren, ist es ratsam, dass Lehrpersonen diese Ungleichheit erkennen und berücksichtigen.
 
-Für eine datenschutzkonforme Nutzung der gleichen Modelle, die hinter ChatGPT stehen, existieren verschiedene kostenpflichtige Dienste, wie zum Beispiel [fobizz Klassenräume](https://fobizz.com/klassenraeume_ki/) und [GPTschule](https://gptschule.de). Diese Anbieter gewährleisten einen sicheren und regulierten Zugang zu den KI-gestützten Modellen für schulische Zwecke.
+Für eine datenschutzkonforme Nutzung der gleichen Modelle, die hinter ChatGPT stehen, existieren verschiedene kostenpflichtige Dienste, wie zum Beispiel [fobizz Klassenräume](https://fobizz.com/klassenraeume_ki/) und [SchulKI](https://schulki.de). Diese Anbieter gewährleisten einen sicheren und regulierten Zugang zu den KI-gestützten Modellen für schulische Zwecke.
 
+## Erweiterte Funktionen von ChatGPT Plus
 
-## Tipps für die eigene Nutzung von ChatGPT
-Die Formulierung einer präzisen Frage oder Aufgabenstellung hilft, aussagekräftigere und zielführendere Antworten vom Modell zu erhalten. Genauigkeit und Detailgrad in der Formulierung tragen dazu bei, mehr Bedeutung aus dem generierten Text zu gewinnen.
+Mit einem Plus-Abo für CHF 20.- pro Monat bietet OpenAI erweiterte Funktionen und Vorteile:
 
-Auch kann es hilfreich sein, Rollen zu definieren, um die Art der Antworten zu steuern. Zum Beispiel: "Du bist eine pädagogisch hervorragend ausgebildete Physikprofessorin und erklärst einem Kind, wie ein Atomreaktor funktioniert."
+- **Früher Zugriff auf neue Funktionen**: Plus-Abonnenten erhalten frühzeitigen Zugang zu neuen Features und Updates.
+- **Zugriff auf GPT-4, GPT‑4o und GPT-3.5**: Neben dem Standardmodell GPT-3.5 haben Plus-Abonnenten uneingeschränkten Zugriff auf die leistungsstärkeren Modelle GPT-4 und GPT-4o.
+- **DALL·E-Bildgenerierung**: Erstellen von Bildern basierend auf Textbeschreibungen mit DALL·E 3.
+- **Individuelle GPTs**: Erstellen von personalisierten GPT-Modellen.
 
-Für kontextspezifische Antworten kann es sinnvoll sein, den Kontext zusammen mit der Aufgabenstellung zu übermitteln. Dies kann beispielsweise Kriterien, Modelle oder Textmodalitäten beinhalten.
-
-Sollte die generierte Antwort nicht zufriedenstellend sein, gibt es mehrere Ansätze, um das Modell besser zu steuern:
--	Es kann hilfreich sein, konkret anzugeben, was an der vorherigen Antwort geändert werden soll.
--	Es kann auch sinnvoll sein, das "laute Denken" des Modells zu fördern. Ein möglicher Prompt dazu könnte lauten: "Denke laut/Schritt für Schritt."
 
 ## ChatGPT ausprobieren
-Hier kannst du ChatGPT kostenlos ausprobieren. Deine Anfragen sind aber auf 10 pro Tag beschränkt.
+Hier kannst du ChatGPT in der Version GPT-3.5 ohne Registrierung ausprobieren. Deine Anfragen sind aber auf 10 pro Tag beschränkt.
 <Chat />
